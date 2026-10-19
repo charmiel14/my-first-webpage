@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY FIRST WEBPAGE</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            color: white;
+        }
+
+        h1 {
+            background-color: #4c1d95;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 8px solid #7e22ce;
+            font-size: 40px;
+            margin: 0 0 20px 0;
+            color: #f3e8ff;
+            letter-spacing: 2px;
+        }
+
+        button {
+            padding: 20px;
+            height: 80px;
+            width: 500px;
+            max-width: 90%;
+            background-color: #4c1d95;
+            border: 2px solid #c084fc;
+            font-size: 20px;
+            border-radius: 50px;
+            color: white;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #7e22ce;
+        }
+
+        .main {
+            background-color: #2e174d;
+            padding: 20px;
+            border: 5px solid #8b5cf6;
+            margin: 30px;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+
+
+        #demo {
+            display: none;
+            background-color: #f3e8ff;
+            color: #4c1d95;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+        #about {
+            font-size: 30px;
+            font-style: italic;
+            color: #d8b4fe;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+                padding: 25px 10px;
+            }
+
+            .main {
+                margin: 15px;
+                font-size: 16px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MY FIRST WEBPAGE</h1>
+
+    <center>
+        <button onclick="pindutin()">Click Me ♡</button>
+    </center>
+
+    <p id="demo"></p>
+
+    <script>
+        function pindutin() {
+            document.getElementById("demo").style.display = "block";
+            document.getElementById("demo").innerHTML =
+                "Hello! Welcome to my webpage! 💜";
+        }
+    </script>
+
+    <div class="main">
+
+        <p id="about">ABOUT ME</p>
+
+        <p>
+            Hello! My name is Angel Charmiel C. Ragos, but my family
+            calls me "Gel". I am the youngest among my siblings, and
+            I am the only girl among them. My birthday is October 14, 2007.
+        </p>
+
+        <p>
+            I am currently studying at Bestlink College of the Philippines
+            as an IT student. To be honest, my dream was to become a lawyer,
+            but because of our financial situation, I decided to take
+            Information Technology instead.
+        </p>
+
+        <p>
+            At first, IT was not my dream course because I really wanted
+            to become a lawyer. However, as time passed, I started to enjoy
+            learning about IT. Now, I want to learn more about technology
+            and improve my skills in creating websites and applications.
+        </p>
+
+        <p>
+            My hobbies are reading Wattpad stories, writing my own Wattpad
+            stories, and watching movies. I enjoy doing these things during
+            my free time.
+        </p>
+
+    </div>
+
+</body>
+</html>
